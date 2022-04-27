@@ -12,7 +12,8 @@ namespace R5T.D0107.I001
         private string ProcessName { get; }
 
 
-        public ConstructorBasedProcessNameProvider(string processName)
+        public ConstructorBasedProcessNameProvider(
+            [NotServiceComponent] string processName)
         {
             this.ProcessName = processName;
         }
