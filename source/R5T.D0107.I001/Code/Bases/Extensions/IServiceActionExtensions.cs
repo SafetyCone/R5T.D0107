@@ -9,7 +9,7 @@ namespace R5T.D0107.I001
     public static class IServiceActionExtensions
     {
         /// <summary>
-        /// Adds the <see cref="ConstructorBasedProcessNameProvider"/> implementation of <see cref="IProcessNameProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="ConstructorBasedProcessNameProvider"/> implementation of <see cref="IProcessNameProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IProcessNameProvider> AddConstructorBasedProcessNameProviderAction(this IServiceAction _,
             string processName)
@@ -21,7 +21,7 @@ namespace R5T.D0107.I001
         }
 
         /// <summary>
-        /// Adds the <see cref="EntryPointAssemblyProcessNameProvider"/> implementation of <see cref="IProcessNameProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="EntryPointAssemblyProcessNameProvider"/> implementation of <see cref="IProcessNameProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IProcessNameProvider> AddEntryPointAssemblyProcessNameProviderAction(this IServiceAction _)
         {
@@ -30,7 +30,7 @@ namespace R5T.D0107.I001
         }
 
         /// <summary>
-        /// Adds the <see cref="StaticValuedProcessNameProvider"/> implementation of <see cref="IProcessNameProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="StaticValuedProcessNameProvider"/> implementation of <see cref="IProcessNameProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IProcessNameProvider> AddStaticValuedProcessNameProviderAction(this IServiceAction _)
         {
